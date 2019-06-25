@@ -1,0 +1,173 @@
+/*
+ * Tooltip container
+*/
+
+.tooltip {
+	position: relative;
+	display: block;
+	width: inherit;
+	height: inherit;
+	margin: auto;
+	padding: 0;
+}
+
+.tooltip.visible {
+	position: absolute;
+	display: inline-block;
+	width: 2px;
+}
+.tooltip.visible::after {
+	content: "?";
+	position: absolute;
+	margin-left: 4px;
+	font-weight: normal;
+	font-size: small;
+}
+
+
+/*
+ * Tooltip anchor
+*/
+
+.tooltip-anchor {
+	display: flex;
+	position: absolute;
+}
+
+.tooltip-anchor.tooltip-top,
+.tooltip-anchor.tooltip-bot {
+	left: 0;
+	width: inherit;
+	height: 1px;
+	justify-content: center;
+}
+
+.tooltip-anchor.tooltip-left,
+.tooltip-anchor.tooltip-right {
+	top: 0;
+	width: 1px;
+	height: inherit;
+	align-items: center;
+}
+
+.tooltip-anchor.tooltip-top   { top:    0; }
+.tooltip-anchor.tooltip-right { right:  0; }
+.tooltip-anchor.tooltip-bot   { bottom: 0; }
+.tooltip-anchor.tooltip-left  { left:   0; }
+
+
+/*
+ * Tooltip text - common properties
+*/
+
+.tooltiptext {
+	position: absolute;
+	z-index: 1;
+	/* On hover: fade in tooltip */
+	/*visibility: hidden;*/
+	/*opacity: 0;*/
+	transition: opacity 0.3s;
+	/* Text attributes */
+	word-wrap: normal;
+	font-size: small;
+	font-weight: normal;
+	/* Other styling */
+	background-color: #353535;
+	color: #dadada;
+	padding: 5px 7px;
+	border-radius: 6px;
+}
+
+
+/*
+ * Tooltip text - variants
+*/
+
+.tooltiptext.tooltip-top,
+.tooltiptext.tooltip-bot {
+	width: max-content;
+	max-width: 120px;
+	padding: 7px 0px;
+}
+
+.tooltiptext.tooltip-right,
+.tooltiptext.tooltip-left {
+	width: max-content;
+	max-width: 200px;
+	padding: 5px 7px;
+}
+
+
+.tooltiptext.tooltip-top {
+	bottom: 15px;
+	text-align: center;
+}
+
+.tooltiptext.tooltip-right {
+	/*left: 30px; top: -5px;*/
+	left: 15px;
+	text-align: left;
+}
+
+.tooltiptext.tooltip-bot {
+	top: 15px;
+	text-align: center;
+}
+
+.tooltiptext.tooltip-left {
+	/*right: 30px; top: -5px;*/
+	right: 15px;
+	text-align: right;
+}
+
+
+/*
+ * Tooltip arrow
+*/
+
+.tooltiptext.tooltip-top::after,
+.tooltiptext.tooltip-right::before,
+.tooltiptext.tooltip-bot::before,
+.tooltiptext.tooltip-left::after {
+	content: "";
+	position: absolute;
+	border-width: 5px;
+	border-style: solid;
+}
+
+.tooltiptext.tooltip-top::after {
+	bottom: -10px; left: 50%;
+	margin-left: -5px;
+	border-color: #555 transparent transparent transparent;
+}
+.tooltiptext.tooltip-right::before {
+	/*top: 7px; left: -10px;*/
+	top: 50%; left: -10px;
+	margin-top: -5px;
+	border-color: transparent #555 transparent transparent;
+}
+.tooltiptext.tooltip-bot::before {
+	top: -10px; left: 50%;
+	margin-left: -5px;
+	border-color: transparent transparent #555 transparent;
+}
+.tooltiptext.tooltip-left::after {
+	/*top: 7px; right: -10px;*/
+	top: 50%; right: -10px;
+	margin-top: -5px;
+	border-color: transparent transparent transparent #555;
+}
+
+
+/*
+ * Tooltip trigger
+ *
+ * Shows the tooltip text when mouse is over
+ * the tooltip container
+*/
+
+.tooltip:hover .tooltiptext,
+.tooltip-visible:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
