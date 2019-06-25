@@ -64,8 +64,8 @@
 	position: absolute;
 	z-index: 1;
 	/* On hover: fade in tooltip */
-	/*visibility: hidden;*/
-	/*opacity: 0;*/
+	visibility: hidden;
+	opacity: 0;
 	transition: opacity 0.3s;
 	/* Text attributes */
 	word-wrap: normal;
