@@ -138,24 +138,24 @@
 .tooltiptext.tooltip-top::after {
 	bottom: -10px; left: 50%;
 	margin-left: -5px;
-	border-color: #555 transparent transparent transparent;
+	border-color: #303030 transparent transparent transparent;
 }
 .tooltiptext.tooltip-right::before {
 	/*top: 7px; left: -10px;*/
 	top: 50%; left: -10px;
 	margin-top: -5px;
-	border-color: transparent #555 transparent transparent;
+	border-color: transparent #303030 transparent transparent;
 }
 .tooltiptext.tooltip-bot::before {
 	top: -10px; left: 50%;
 	margin-left: -5px;
-	border-color: transparent transparent #555 transparent;
+	border-color: transparent transparent #303030 transparent;
 }
 .tooltiptext.tooltip-left::after {
 	/*top: 7px; right: -10px;*/
 	top: 50%; right: -10px;
 	margin-top: -5px;
-	border-color: transparent transparent transparent #555;
+	border-color: transparent transparent transparent #303030;
 }
 
 
