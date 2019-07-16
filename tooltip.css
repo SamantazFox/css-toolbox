@@ -32,21 +32,19 @@
 .tooltip-anchor {
 	display: flex;
 	position: absolute;
+	width: 1px;
+	height: 1px;
 }
 
 .tooltip-anchor.tooltip-top,
 .tooltip-anchor.tooltip-bot {
-	left: 0;
-	width: 100%;
-	height: 1px;
+	left: 50%;
 	justify-content: center;
 }
 
 .tooltip-anchor.tooltip-left,
 .tooltip-anchor.tooltip-right {
-	top: 0;
-	width: 1px;
-	height: 100%;
+	top: 50%;
 	align-items: center;
 }
 
