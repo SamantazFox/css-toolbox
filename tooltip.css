@@ -83,35 +83,35 @@
  * Tooltip text - variants
 */
 
-.tooltiptext.tooltip-top,
-.tooltiptext.tooltip-bot {
+.tooltip-top > .tooltiptext,
+.tooltip-bot > .tooltiptext {
 	width: max-content;
 	max-width: 120px;
 }
 
-.tooltiptext.tooltip-right,
-.tooltiptext.tooltip-left {
+.tooltip-right > .tooltiptext,
+.tooltip-left > .tooltiptext {
 	width: max-content;
 	max-width: 200px;
 }
 
 
-.tooltiptext.tooltip-top {
+.tooltip-top > .tooltiptext {
 	bottom: 15px;
 	text-align: center;
 }
 
-.tooltiptext.tooltip-right {
+.tooltip-right > .tooltiptext {
 	left: 15px;
 	text-align: left;
 }
 
-.tooltiptext.tooltip-bot {
+.tooltip-bot > .tooltiptext {
 	top: 15px;
 	text-align: center;
 }
 
-.tooltiptext.tooltip-left {
+.tooltip-left > .tooltiptext {
 	right: 15px;
 	text-align: right;
 }
@@ -121,32 +121,32 @@
  * Tooltip arrow
 */
 
-.tooltiptext.tooltip-top::after,
-.tooltiptext.tooltip-right::before,
-.tooltiptext.tooltip-bot::before,
-.tooltiptext.tooltip-left::after {
+.tooltip-top > .tooltiptext::after,
+.tooltip-right > .tooltiptext::before,
+.tooltip-bot > .tooltiptext::before,
+.tooltip-left > .tooltiptext::after {
 	content: "";
 	position: absolute;
 	border-width: 5px;
 	border-style: solid;
 }
 
-.tooltiptext.tooltip-top::after {
+.tooltip-top > .tooltiptext::after {
 	bottom: -10px; left: 50%;
 	margin-left: -5px;
 	border-color: #303030 transparent transparent transparent;
 }
-.tooltiptext.tooltip-right::before {
+.tooltip-right > .tooltiptext::before {
 	top: 50%; left: -10px;
 	margin-top: -5px;
 	border-color: transparent #303030 transparent transparent;
 }
-.tooltiptext.tooltip-bot::before {
+.tooltip-bot > .tooltiptext::before {
 	top: -10px; left: 50%;
 	margin-left: -5px;
 	border-color: transparent transparent #303030 transparent;
 }
-.tooltiptext.tooltip-left::after {
+.tooltip-left > .tooltiptext::after {
 	top: 50%; right: -10px;
 	margin-top: -5px;
 	border-color: transparent transparent transparent #303030;
