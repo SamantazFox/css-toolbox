@@ -87,14 +87,12 @@
 .tooltiptext.tooltip-bot {
 	width: max-content;
 	max-width: 120px;
-	padding: 7px 0px;
 }
 
 .tooltiptext.tooltip-right,
 .tooltiptext.tooltip-left {
 	width: max-content;
 	max-width: 200px;
-	padding: 5px 7px;
 }
 
 
@@ -104,7 +102,6 @@
 }
 
 .tooltiptext.tooltip-right {
-	/*left: 30px; top: -5px;*/
 	left: 15px;
 	text-align: left;
 }
@@ -115,7 +112,6 @@
 }
 
 .tooltiptext.tooltip-left {
-	/*right: 30px; top: -5px;*/
 	right: 15px;
 	text-align: right;
 }
@@ -141,7 +137,6 @@
 	border-color: #303030 transparent transparent transparent;
 }
 .tooltiptext.tooltip-right::before {
-	/*top: 7px; left: -10px;*/
 	top: 50%; left: -10px;
 	margin-top: -5px;
 	border-color: transparent #303030 transparent transparent;
@@ -152,7 +147,6 @@
 	border-color: transparent transparent #303030 transparent;
 }
 .tooltiptext.tooltip-left::after {
-	/*top: 7px; right: -10px;*/
 	top: 50%; right: -10px;
 	margin-top: -5px;
 	border-color: transparent transparent transparent #303030;
