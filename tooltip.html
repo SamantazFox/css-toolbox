@@ -1,0 +1,28 @@
+<!--
+	In order for the tooltip to work properly, it must
+	be placed inside a <div> container.
+-->
+<div class="tooltip">
+
+	<!--
+		This element will trigger the tooltip on hover.
+		Here it's a <p>, but it can also be a <div>,
+		a <span>, an <img>, ... Anything you like!
+	-->
+	<p class="text">Hello World!</p>
+
+	<!--
+		This is the actual tooltip element, made of an anchor
+		and some content. The anchor position class determines
+		where the tooltip will be displayed:
+		  * "tooltip-top"   => tooltip content will be above
+		  * "tooltip-bot"   => tooltip content will be below
+		  * "tooltip-left"  => tooltip content will be on the left
+		  * "tooltip-right" => tooltip content will be on the right
+	-->
+	<div class="tooltip-anchor [anchor position class]">
+		<span class="tooltiptext">
+			<!-- Put your content in here. Can be text or HTML. -->
+		</span>
+	</div>
+</div>
