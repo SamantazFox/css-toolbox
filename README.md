@@ -5,7 +5,8 @@ A bunch of HTML and CSS3 snippets that provide small UI
 components, without a byte of Javascript.
 
 Currently available components:
-  - Tooltip
+  - [Tooltip](tooltip/README.md)
+  - [Toggle](toggle/README.md)
 
 
 Licensing
