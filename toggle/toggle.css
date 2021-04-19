@@ -2,7 +2,7 @@
 label {
 	--color-enabled: #18984a;
 	--color-disabled: #7d7d7d;
-	width: 2.8em; height: 1.4em;
+	width: 2.6em; height: 1.3em;
 	margin: 0; padding: 0;
 	display: inline-block;
 	background-color: var(--color-disabled);
@@ -10,12 +10,13 @@ label {
 	border-bottom-left-radius: 25% 50%;
 	border-top-right-radius: 25% 50%;
 	border-bottom-right-radius: 25% 50%;
+	vertical-align: middle;
 }
 label > span {
 	display: block;
 	background-color: #fff;
-	width: 1em;
-	height: 1em;
+	width: 0.9em;
+	height: 0.9em;
 	border-radius: 50%;
 	margin: 0.2em;
 	padding: 0;
@@ -25,4 +26,4 @@ label > span {
 
 /* Modfify nearby indicator when checkbox is checked */
 input[type="checkbox"]:checked ~ label { background-color: var(--color-enabled); }
-input[type="checkbox"]:checked ~ label > span { left: 1.4em; }
+input[type="checkbox"]:checked ~ label > span { left: 1.3em; }
