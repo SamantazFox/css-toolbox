@@ -8,7 +8,7 @@
 		html { font-size: 130%; }
 
 		table {
-			width:  180px;
+			width:  260px;
 			min-height: 90px;
 			margin: 150px auto;
 			padding: 5px;
@@ -22,13 +22,16 @@
 			border: 1px solid grey;
 		}
 		table td {
-			width: 50%;
 			min-height: 30px;
 			margin: 0;
 			padding: 5px;
 		}
 
-		table td.center {
+		table td.left {
+			width: 75%;
+		}
+		table td.right {
+			width: 25%;
 			text-align: center;
 		}
 	</style>
@@ -48,18 +51,10 @@
 			</tr>
 
 			<tr>
-				<td>Toggle 2</td>
+				<td>Toggle 2 (Animated)</td>
 				<td class="center">
-					<input id="checkbox2" name="input2" type="checkbox" hidden="">
-					<label for="checkbox2" class="toggle-switch"><span></span></label>
-				</td>
-			</tr>
-
-			<tr>
-				<td>Toggle 3</td>
-				<td class="center">
-					<input id="checkbox3" name="input3" type="checkbox" hidden="">
-					<label for="checkbox3" class="toggle-switch"><span></span></label>
+					<input id="checkbox2" name="input2" type="checkbox" hidden="" checked>
+					<label for="checkbox2" class="toggle-switch animated"><span></span></label>
 				</td>
 			</tr>
 		</tbody>

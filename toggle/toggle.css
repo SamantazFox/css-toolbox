@@ -31,3 +31,9 @@ input[type="checkbox"]:checked ~ label.toggle-switch {
 input[type="checkbox"]:checked ~ label.toggle-switch > span {
 	left: 1.3em;
 }
+
+/* Animated toggle (optional) */
+label.toggle-switch.animated,
+label.toggle-switch.animated > span {
+	transition: 0.5s all;
+}
